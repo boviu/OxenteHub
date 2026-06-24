@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OxenteHub - Gírias, Costumes e Cultura Nordestina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>🌵 OxenteHub</h1>
+            <p>Descubra o Nordeste</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Tela Principal</a></li>
+                <li><a href="turismo.html"><i class="fa-solid fa-umbrella-beach"></i> Turismo no Nordeste</a></li>
+                <li><a href="tempo.html"><i class="fa-solid fa-cloud-sun"></i> Clima e Tempo</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-users"></i> Sobre Nós</a></li>
+                <li><a href="girias.html" class="active"><i class="fa-solid fa-face-smile"></i> Gírias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content-single">
+        <div class="cultura-page-container">
+
+            <div class="cultura-header">
+                <h2>
+                    <i class="fa-solid fa-comment"></i>
+                    Aprenda as gírias, costumes e cultura do nordeste!
+                </h2>
+                <p>Gírias, costumes e cultura local do Nordeste brasileiro</p>
+            </div>
+
+            <div class="estados-navegacao">
+                <button class="btn-estado active" data-estado="todos">
+                    <i class="fa-solid fa-star"></i> Todos
+                </button>
+                <button class="btn-estado" data-estado="alagoas">
+                    <i class="fa-solid fa-flag"></i> Alagoas
+                </button>
+                <button class="btn-estado" data-estado="bahia">
+                    <i class="fa-solid fa-flag"></i> Bahia
+                </button>
+                <button class="btn-estado" data-estado="ceara">
+                    <i class="fa-solid fa-flag"></i> Ceará
+                </button>
+                <button class="btn-estado" data-estado="maranhao">
+                    <i class="fa-solid fa-flag"></i> Maranhão
+                </button>
+                <button class="btn-estado" data-estado="paraiba">
+                    <i class="fa-solid fa-flag"></i> Paraíba
+                </button>
+                <button class="btn-estado" data-estado="pernambuco">
+                    <i class="fa-solid fa-flag"></i> Pernambuco
+                </button>
+                <button class="btn-estado" data-estado="piaui">
+                    <i class="fa-solid fa-flag"></i> Piauí
+                </button>
+                <button class="btn-estado" data-estado="rn">
+                    <i class="fa-solid fa-flag"></i> Rio Grande do Norte
+                </button>
+                <button class="btn-estado" data-estado="sergipe">
+                    <i class="fa-solid fa-flag"></i> Sergipe
+                </button>
+            </div>
+
+            <div class="categoria-filtro">
+                <button class="btn-categoria active" data-categoria="todas">
+                    <i class="fa-solid fa-list"></i> Todas
+                </button>
+                <button class="btn-categoria" data-categoria="girias">
+                    <i class="fa-solid fa-comment-dots"></i> Gírias
+                </button>
+                <button class="btn-categoria" data-categoria="costumes">
+                    <i class="fa-solid fa-utensils"></i> Costumes
+                </button>
+                <button class="btn-categoria" data-categoria="cultura">
+                    <i class="fa-solid fa-music"></i> Cultura Local
+                </button>
+            </div>
+
+            <div id="conteudo-cultura">
+            </div>
+
+            
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>OxenteHub</strong> | O sotaque da notícia está aqui</p>
+        <p class="sources">Gírias, costumes e cultura local do Nordeste brasileiro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

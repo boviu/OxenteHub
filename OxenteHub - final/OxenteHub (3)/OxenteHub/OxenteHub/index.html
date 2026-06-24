@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxenteHub — O Portal do Nordeste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>🌵 OxenteHub</h1>
+            <p>Descubra o Nordeste</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Tela Principal</a></li>
+                <li><a href="turismo.html"><i class="fa-solid fa-umbrella-beach"></i> Turismo no Nordeste</a></li>
+                <li><a href="tempo.html"><i class="fa-solid fa-cloud-sun"></i> Clima e Tempo</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-users"></i> Sobre Nós</a></li>
+                <li><a href="girias.html"><i class="fa-solid fa-face-smile"></i> Gírias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="ticker-wrap">
+        <div class="ticker" id="moedas-ticker">
+            Carregando cotações econômicas...
+        </div>
+    </div>
+
+    <section class="hero-banner">
+        <div class="carousel-container">
+            <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="hero-text">
+                <h2 id="slide-title">Descubra o Nordeste</h2>
+                <p id="slide-desc">Encontre as principais informações, clima e notícias em tempo real.</p>
+            </div>
+            <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="image-carousel-section">
+        <h2 class="section-title"><i class="fa-solid fa-images"></i> Tirinhas em destaque:</h2>
+        
+        <div class="image-carousel-container">
+            <button class="carousel-btn-img prev-img" id="prevImgBtn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            
+            <div class="image-carousel-track" id="imageCarouselTrack">
+                <div class="image-carousel-slide">
+                    <img src="imagem.png" alt="Paisagem do Nordeste 1" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Cacique Cobra Coral faz chover</h3>
+                        <p>Por: Maycon</p>
+                    </div>
+                </div>
+                <div class="image-carousel-slide">
+                    <img src="imagem (1).png" alt="Paisagem do Nordeste 2" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Maycon Jackson foge da polícia</h3>
+                        <p>Por: Maycon</p>
+                    </div>
+                </div>
+                <div class="image-carousel-slide">
+                    <img src="imagem (2).png" alt="Paisagem do Nordeste 3" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Cristiano descobre assombração</h3>
+                        <p>Por: Maycon</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn-img next-img" id="nextImgBtn">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-dots" id="imageDots">
+                <span class="carousel-dot active" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+                <span class="carousel-dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content-news">
+        <h2 class="section-title-main"><i class="fa-solid fa-newspaper"></i> Últimas Notícias do Nordeste</h2>
+        
+        <div class="news-grid">
+            <div class="news-column" id="news-column-left">
+            </div>
+            
+            <div class="news-column" id="news-column-right">
+            </div>
+        </div>
+
+        <div class="btn-carregar-mais">
+            <button id="btnCarregarMais" class="btn-load-more">
+                <i class="fa-solid fa-arrow-down"></i> Carregar mais notícias
+            </button>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>OxenteHub</strong> | Desenvolvido por Aurora, Letícia Anti, Lorena, Marina e Maycon | &copy; 2026</p>
+        <p class="sources">Fontes: API Open-Meteo, DolarAPI, YouTube e SoundHelix</p>
+    </footer>
+
+    <div class="modal" id="modalNoticia">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitulo">Título da Notícia</h2>
+                <div class="modal-meta">
+                    <span id="modalData"><i class="fa-regular fa-calendar"></i> 00/00/0000</span>
+                    <span id="modalCategoria"><i class="fa-solid fa-tag"></i> Categoria</span>
+                </div>
+                <img id="modalImagem" src="" alt="Imagem da notícia">
+                <p id="modalConteudo">Conteúdo completo da notícia...</p>
+                <div class="modal-compartilhar">
+                    <span>Compartilhe:</span>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

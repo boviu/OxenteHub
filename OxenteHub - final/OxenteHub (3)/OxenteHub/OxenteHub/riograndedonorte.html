@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxenteHub - Turismo no Rio Grande do Norte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .estado-turismo-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .estado-turismo-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .estado-turismo-header h1 {
+            font-size: 2.5rem;
+            color: #d35400;
+        }
+        .estado-turismo-header .bandeira {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .estado-turismo-header p {
+            color: #5d6d7e;
+            font-size: 1.1rem;
+        }
+        .btn-voltar {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .btn-voltar:hover {
+            background: #d35400;
+            transform: translateX(-5px);
+        }
+        .ponto-turistico {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .ponto-turistico img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .ponto-turistico .info {
+            padding: 25px;
+        }
+        .ponto-turistico .info h2 {
+            color: #d35400;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .ponto-turistico .info p {
+            color: #5d6d7e;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .ponto-turistico .info .detalhes {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .ponto-turistico .info .detalhes span {
+            background: #fef0e6;
+            color: #d35400;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .atracoes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .atracoes-grid .atracao {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            border-left: 4px solid #d35400;
+        }
+        .atracoes-grid .atracao h4 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .atracoes-grid .atracao p {
+            color: #5d6d7e;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .ponto-turistico img {
+                height: 250px;
+            }
+            .estado-turismo-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>🌵 OxenteHub</h1>
+            <p>Descubra o Nordeste</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Tela Principal</a></li>
+                <li><a href="turismo.html" class="active"><i class="fa-solid fa-umbrella-beach"></i> Turismo no Nordeste</a></li>
+                <li><a href="tempo.html"><i class="fa-solid fa-cloud-sun"></i> Clima e Tempo</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-users"></i> Sobre Nós</a></li>
+                <li><a href="girias.html"><i class="fa-solid fa-face-smile"></i> Gírias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="estado-turismo-page">
+        <a href="turismo.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar para Turismo</a>
+
+        <div class="estado-turismo-header">
+            <h1>Rio Grande do Norte</h1>
+            <p>Dunas, praias paradisíacas e o Forte dos Reis Magos</p>
+        </div>
+
+        <div class="ponto-turistico">
+            <img src="https://quantocustaviajar.com/blog/wp-content/uploads/2018/12/dunas-de-genipabu-1.jpg" alt="Genipabu - Rio Grande do Norte">
+            <div class="info">
+                <h2>Dunas de Genipabu</h2>
+                <p>Genipabu é um dos destinos mais famosos do Rio Grande do Norte. Com suas dunas de areia branca, lagoas de água doce e passeios de buggy, oferece uma experiência única de aventura e contato com a natureza.</p>
+                <div class="detalhes">
+                    <span><i class="fa-solid fa-location-dot"></i> Litoral Norte</span>
+                    <span><i class="fa-solid fa-mountain"></i> Dunas</span>
+                    <span><i class="fa-solid fa-car"></i> Passeio de Buggy</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="color: #d35400; margin-top: 30px;"><i class="fa-solid fa-map-location-dot"></i> Outras atrações turísticas</h3>
+        <div class="atracoes-grid">
+            <div class="atracao">
+                <h4>🏛️ Forte dos Reis Magos</h4>
+                <p>Principal patrimônio histórico do Rio Grande do Norte.</p>
+            </div>
+            <div class="atracao">
+                <h4>🏖️ Pipa</h4>
+                <p>Praia famosa por suas falésias e vida noturna animada.</p>
+            </div>
+            <div class="atracao">
+                <h4>🌅 Dunas de Genipabu</h4>
+                <p>Ícone turístico do estado com paisagens deslumbrantes.</p>
+            </div>
+            <div class="atracao">
+                <h4>🦐 Carne de Sol</h4>
+                <p>Prato típico potiguar, muito apreciado em todo o estado.</p>
+            </div>
+            <div class="atracao">
+                <h4>🎭 Forró</h4>
+                <p>Música e dança presentes nas praças durante o ano todo.</p>
+            </div>
+            <div class="atracao">
+                <h4>🧵 Renda de Bilro</h4>
+                <p>Artesanato tradicional produzido em várias cidades.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>OxenteHub</strong> | Turismo no Rio Grande do Norte</p>
+        <p class="sources">Descubra as belezas do RN</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

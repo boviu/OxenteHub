@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxenteHub - Turismo na Paraíba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .estado-turismo-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .estado-turismo-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .estado-turismo-header h1 {
+            font-size: 2.5rem;
+            color: #d35400;
+        }
+        .estado-turismo-header .bandeira {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .estado-turismo-header p {
+            color: #5d6d7e;
+            font-size: 1.1rem;
+        }
+        .btn-voltar {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .btn-voltar:hover {
+            background: #d35400;
+            transform: translateX(-5px);
+        }
+        .ponto-turistico {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .ponto-turistico img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .ponto-turistico .info {
+            padding: 25px;
+        }
+        .ponto-turistico .info h2 {
+            color: #d35400;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .ponto-turistico .info p {
+            color: #5d6d7e;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .ponto-turistico .info .detalhes {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .ponto-turistico .info .detalhes span {
+            background: #fef0e6;
+            color: #d35400;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .atracoes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .atracoes-grid .atracao {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            border-left: 4px solid #d35400;
+        }
+        .atracoes-grid .atracao h4 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .atracoes-grid .atracao p {
+            color: #5d6d7e;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .ponto-turistico img {
+                height: 250px;
+            }
+            .estado-turismo-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>🌵 OxenteHub</h1>
+            <p>Descubra o Nordeste</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Tela Principal</a></li>
+                <li><a href="turismo.html" class="active"><i class="fa-solid fa-umbrella-beach"></i> Turismo no Nordeste</a></li>
+                <li><a href="tempo.html"><i class="fa-solid fa-cloud-sun"></i> Clima e Tempo</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-users"></i> Sobre Nós</a></li>
+                <li><a href="girias.html"><i class="fa-solid fa-face-smile"></i> Gírias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="estado-turismo-page">
+        <a href="turismo.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar para Turismo</a>
+
+        <div class="estado-turismo-header">
+            <h1>Paraíba</h1>
+            <p>Ponto mais oriental das Américas, praias e cultura nordestina</p>
+        </div>
+
+        <div class="ponto-turistico">
+            <img src="https://www.civitatis.com/blog/wp-content/uploads/2025/05/shutterstock_2360068173.jpg" alt="João Pessoa - Paraíba">
+            <div class="info">
+                <h2>João Pessoa</h2>
+                <p>A capital da Paraíba é conhecida por suas praias urbanas, o famoso Cabo Branco e a Estação Cabo Branco. A cidade também abriga o ponto mais oriental das Américas, onde o sol nasce primeiro no continente.</p>
+                <div class="detalhes">
+                    <span><i class="fa-solid fa-location-dot"></i> João Pessoa</span>
+                    <span><i class="fa-solid fa-sun"></i> Ponto Mais Oriental</span>
+                    <span><i class="fa-solid fa-umbrella-beach"></i> Praias</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="color: #d35400; margin-top: 30px;"><i class="fa-solid fa-map-location-dot"></i> Outras atrações turísticas</h3>
+        <div class="atracoes-grid">
+            <div class="atracao">
+                <h4>🏖️ Cabo Branco</h4>
+                <p>Praia com falésias coloridas e o famoso farol.</p>
+            </div>
+            <div class="atracao">
+                <h4>🌊 Tambaba</h4>
+                <p>Praia de águas claras com piscinas naturais e recifes.</p>
+            </div>
+            <div class="atracao">
+                <h4>📚 Literatura de Cordel</h4>
+                <p>Tradição literária popular com rimas e histórias.</p>
+            </div>
+            <div class="atracao">
+                <h4>🏛️ Centro Histórico</h4>
+                <p>Patrimônio arquitetônico com igrejas e casarões coloniais.</p>
+            </div>
+            <div class="atracao">
+                <h4>🎵 Repentismo</h4>
+                <p>Improviso poético cantado, típico da cultura paraibana.</p>
+            </div>
+            <div class="atracao">
+                <h4>🧀 Queijo de Coalho</h4>
+                <p>Prato típico servido com carne de sol e rubacão.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>OxenteHub</strong> | Turismo na Paraíba</p>
+        <p class="sources">Descubra as belezas da Paraíba</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima e Tempo — OxenteHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>🌵 OxenteHub</h1>
+            <p>Descubra o Nordeste</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Tela Principal</a></li>
+                <li><a href="turismo.html"><i class="fa-solid fa-umbrella-beach"></i> Turismo no Nordeste</a></li>
+                <li><a href="tempo.html" class="active"><i class="fa-solid fa-cloud-sun"></i> Clima e Tempo</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-users"></i> Sobre Nós</a></li>
+                <li><a href="girias.html"><i class="fa-solid fa-face-smile"></i> Gírias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content-single">
+        <section class="weather-page-container">
+            <h2 class="section-title"><i class="fa-solid fa-temperature-high"></i> Previsão do Tempo no Nordeste</h2>
+            
+            <div class="weather-selector-box">
+                <label for="weather-select-state"><strong> Selecione a Capital desejada:</strong></label>
+                <select id="weather-select-state" class="styled-select">
+                    <option value="Fortaleza,CE"> Fortaleza - CE</option>
+                    <option value="Salvador,BA"> Salvador - BA</option>
+                    <option value="Recife,PE"> Recife - PE</option>
+                    <option value="Natal,RN"> Natal - RN</option>
+                    <option value="Maceio,AL"> Maceió - AL</option>
+                    <option value="Aracaju,SE"> Aracaju - SE</option>
+                    <option value="Joao Pessoa,PB"> João Pessoa - PB</option>
+                    <option value="Sao Luis,MA"> São Luís - MA</option>
+                    <option value="Teresina,PI"> Teresina - PI</option>
+                </select>
+            </div>
+
+            <div class="weather-display-card">
+                <div class="city-info">
+                    <span id="clima-icone"></span>
+                    <h3 id="clima-cidade">Fortaleza - CE</h3>
+                    <p id="clima-desc">Carregando dados meteorológicos...</p>
+                </div>
+                <div class="temp-box">
+                    <span id="clima-temp">--°C</span>
+                </div>
+                <div class="extra-details">
+                    <div class="detail-item">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>Vento: <strong id="clima-vento">-- km/h</strong></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>Umidade: <strong id="clima-umidade">--%</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>OxenteHub</strong> | Feito por: Aurora, Letícia Anti, Lorena, Marina e Maycon.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
